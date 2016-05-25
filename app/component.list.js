@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var component_custom_1 = require('./component.custom');
-var component_list_1 = require('./component.list');
-var AppComponent = (function () {
-    function AppComponent() {
+var ComponentList = (function () {
+    function ComponentList() {
     }
-    AppComponent = __decorate([
+    ComponentList = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<mtm-title></mtm-title><mtm-list></mtm-list>',
-            directives: [component_custom_1.ComponentCustom, component_list_1.ComponentList]
+            selector: 'mtm-list',
+            template: '<ul><li>Alberto</li><li>Enrico</li><li>Fabio</li><li>Davide</li><li>Angelo</li><li>Marco</li><li>Emiliano</li></ul>'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ComponentList);
+    return ComponentList;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ComponentList = ComponentList;
+//# sourceMappingURL=component.list.js.map

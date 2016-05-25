@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
+
+import { ComponentCustom } from './component.custom';
+import { ComponentList } from './component.list';
+
 @Component({
   selector: 'my-app',
-  template: '<h1>My First Angular 2 App</h1>'
+  template: '<mtm-title></mtm-title><mtm-list></mtm-list>',
+  directives: [ComponentCustom, ComponentList]
 })
 export class AppComponent { }
+
